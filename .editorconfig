@@ -1,0 +1,10 @@
+﻿[*.vb]
+
+# BC42016: Conversione implicita
+dotnet_diagnostic.BC42016.severity = none
+
+# BC42017: Risoluzione con associazione tardiva
+dotnet_diagnostic.BC42017.severity = none
+
+# BC42353: La funzione non restituisce un valore per tutti i percorsi del codice
+dotnet_diagnostic.BC42353.severity = none
