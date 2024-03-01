@@ -42,3 +42,14 @@ D:\ViweMyIP\viewmyip\obj\Debug\viewmyip.vbproj.GenerateResource.cache
 D:\ViweMyIP\viewmyip\obj\Debug\viewmyip.vbproj.CoreCompileInputs.cache
 D:\ViweMyIP\viewmyip\obj\Debug\viewmyip.exe
 D:\ViweMyIP\viewmyip\obj\Debug\viewmyip.pdb
+D:\viewmyip\viewmyip\bin\Debug\viewmyip.exe.config
+D:\viewmyip\viewmyip\bin\Debug\viewmyip.exe
+D:\viewmyip\viewmyip\bin\Debug\viewmyip.pdb
+D:\viewmyip\viewmyip\obj\Debug\viewmyip.vbproj.AssemblyReference.cache
+D:\viewmyip\viewmyip\obj\Debug\viewmyip.Form1.resources
+D:\viewmyip\viewmyip\obj\Debug\viewmyip.msgform.resources
+D:\viewmyip\viewmyip\obj\Debug\viewmyip.Resources.resources
+D:\viewmyip\viewmyip\obj\Debug\viewmyip.vbproj.GenerateResource.cache
+D:\viewmyip\viewmyip\obj\Debug\viewmyip.vbproj.CoreCompileInputs.cache
+D:\viewmyip\viewmyip\obj\Debug\viewmyip.exe
+D:\viewmyip\viewmyip\obj\Debug\viewmyip.pdb

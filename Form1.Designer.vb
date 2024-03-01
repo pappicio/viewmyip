@@ -48,6 +48,8 @@ Partial Class Form1
         Me.LEggiUltimi5MessaggiRicevutiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LeggiUltimi5MessaggiRicevutiToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.timermenu = New System.Windows.Forms.Timer(Me.components)
+        Me.timernic = New System.Windows.Forms.Timer(Me.components)
+        Me.label11 = New viewmyip.shadow.ShadowLabel(Me.components)
         Me.Label10 = New viewmyip.shadow.ShadowLabel(Me.components)
         Me.Label9 = New viewmyip.shadow.ShadowLabel(Me.components)
         Me.Label8 = New viewmyip.shadow.ShadowLabel(Me.components)
@@ -58,7 +60,6 @@ Partial Class Form1
         Me.Label3 = New viewmyip.shadow.ShadowLabel(Me.components)
         Me.label2 = New viewmyip.shadow.ShadowLabel(Me.components)
         Me.Label1 = New viewmyip.shadow.ShadowLabel(Me.components)
-        Me.label11 = New viewmyip.shadow.ShadowLabel(Me.components)
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -79,29 +80,50 @@ Partial Class Form1
         Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LEggiUltimoMessaggioRicevutoToolStripMenuItem, Me.LEggiUltimi5MessaggiRicevutiToolStripMenuItem, Me.LeggiUltimi5MessaggiRicevutiToolStripMenuItem1})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(302, 76)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(252, 70)
         '
         'LEggiUltimoMessaggioRicevutoToolStripMenuItem
         '
         Me.LEggiUltimoMessaggioRicevutoToolStripMenuItem.Name = "LEggiUltimoMessaggioRicevutoToolStripMenuItem"
-        Me.LEggiUltimoMessaggioRicevutoToolStripMenuItem.Size = New System.Drawing.Size(301, 24)
+        Me.LEggiUltimoMessaggioRicevutoToolStripMenuItem.Size = New System.Drawing.Size(251, 22)
         Me.LEggiUltimoMessaggioRicevutoToolStripMenuItem.Text = "Leggi Ultimo Messaggio Ricevuto"
         '
         'LEggiUltimi5MessaggiRicevutiToolStripMenuItem
         '
         Me.LEggiUltimi5MessaggiRicevutiToolStripMenuItem.Name = "LEggiUltimi5MessaggiRicevutiToolStripMenuItem"
-        Me.LEggiUltimi5MessaggiRicevutiToolStripMenuItem.Size = New System.Drawing.Size(301, 24)
+        Me.LEggiUltimi5MessaggiRicevutiToolStripMenuItem.Size = New System.Drawing.Size(251, 22)
         Me.LEggiUltimi5MessaggiRicevutiToolStripMenuItem.Text = "Leggi ultimi 3 Messaggi Ricevuti"
         '
         'LeggiUltimi5MessaggiRicevutiToolStripMenuItem1
         '
         Me.LeggiUltimi5MessaggiRicevutiToolStripMenuItem1.Name = "LeggiUltimi5MessaggiRicevutiToolStripMenuItem1"
-        Me.LeggiUltimi5MessaggiRicevutiToolStripMenuItem1.Size = New System.Drawing.Size(301, 24)
+        Me.LeggiUltimi5MessaggiRicevutiToolStripMenuItem1.Size = New System.Drawing.Size(251, 22)
         Me.LeggiUltimi5MessaggiRicevutiToolStripMenuItem1.Text = "Leggi ultimi 5 Messaggi Ricevuti"
         '
         'timermenu
         '
         Me.timermenu.Interval = 5000
+        '
+        'timernic
+        '
+        Me.timernic.Interval = 3000
+        '
+        'label11
+        '
+        Me.label11.Angle = 0!
+        Me.label11.EndColor = System.Drawing.Color.Black
+        Me.label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label11.ForeColor = System.Drawing.Color.White
+        Me.label11.Location = New System.Drawing.Point(0, 170)
+        Me.label11.Name = "label11"
+        Me.label11.ShadowColor = System.Drawing.Color.Gray
+        Me.label11.Size = New System.Drawing.Size(62, 19)
+        Me.label11.StartColor = System.Drawing.Color.Black
+        Me.label11.TabIndex = 21
+        Me.label11.Text = "Label1"
+        Me.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.label11.XOffset = 1.0!
+        Me.label11.YOffset = 1.0!
         '
         'Label10
         '
@@ -109,11 +131,10 @@ Partial Class Form1
         Me.Label10.EndColor = System.Drawing.Color.Black
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(0, 186)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Location = New System.Drawing.Point(0, 151)
         Me.Label10.Name = "Label10"
         Me.Label10.ShadowColor = System.Drawing.Color.Gray
-        Me.Label10.Size = New System.Drawing.Size(82, 23)
+        Me.Label10.Size = New System.Drawing.Size(62, 19)
         Me.Label10.StartColor = System.Drawing.Color.Black
         Me.Label10.TabIndex = 20
         Me.Label10.Text = "Label1"
@@ -127,11 +148,10 @@ Partial Class Form1
         Me.Label9.EndColor = System.Drawing.Color.Black
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(0, 163)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Location = New System.Drawing.Point(0, 132)
         Me.Label9.Name = "Label9"
         Me.Label9.ShadowColor = System.Drawing.Color.Gray
-        Me.Label9.Size = New System.Drawing.Size(82, 23)
+        Me.Label9.Size = New System.Drawing.Size(62, 19)
         Me.Label9.StartColor = System.Drawing.Color.Black
         Me.Label9.TabIndex = 19
         Me.Label9.Text = "Label1"
@@ -145,11 +165,10 @@ Partial Class Form1
         Me.Label8.EndColor = System.Drawing.Color.Black
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(0, 140)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Location = New System.Drawing.Point(0, 114)
         Me.Label8.Name = "Label8"
         Me.Label8.ShadowColor = System.Drawing.Color.Gray
-        Me.Label8.Size = New System.Drawing.Size(82, 23)
+        Me.Label8.Size = New System.Drawing.Size(62, 19)
         Me.Label8.StartColor = System.Drawing.Color.Black
         Me.Label8.TabIndex = 18
         Me.Label8.Text = "Label1"
@@ -163,11 +182,10 @@ Partial Class Form1
         Me.Label7.EndColor = System.Drawing.Color.Black
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(0, 117)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(0, 95)
         Me.Label7.Name = "Label7"
         Me.Label7.ShadowColor = System.Drawing.Color.Gray
-        Me.Label7.Size = New System.Drawing.Size(82, 23)
+        Me.Label7.Size = New System.Drawing.Size(62, 19)
         Me.Label7.StartColor = System.Drawing.Color.Black
         Me.Label7.TabIndex = 17
         Me.Label7.Text = "Label1"
@@ -183,11 +201,10 @@ Partial Class Form1
         Me.Label5.EndColor = System.Drawing.Color.White
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(89, 2)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(67, 2)
         Me.Label5.Name = "Label5"
         Me.Label5.ShadowColor = System.Drawing.Color.Gray
-        Me.Label5.Size = New System.Drawing.Size(62, 23)
+        Me.Label5.Size = New System.Drawing.Size(46, 19)
         Me.Label5.StartColor = System.Drawing.Color.White
         Me.Label5.TabIndex = 11
         Me.Label5.Text = "MSG"
@@ -202,11 +219,10 @@ Partial Class Form1
         Me.Label6.EndColor = System.Drawing.Color.Black
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(0, 94)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(0, 76)
         Me.Label6.Name = "Label6"
         Me.Label6.ShadowColor = System.Drawing.Color.Gray
-        Me.Label6.Size = New System.Drawing.Size(82, 23)
+        Me.Label6.Size = New System.Drawing.Size(62, 19)
         Me.Label6.StartColor = System.Drawing.Color.Black
         Me.Label6.TabIndex = 16
         Me.Label6.Text = "Label1"
@@ -220,11 +236,10 @@ Partial Class Form1
         Me.Label4.EndColor = System.Drawing.Color.Black
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(0, 71)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(0, 58)
         Me.Label4.Name = "Label4"
         Me.Label4.ShadowColor = System.Drawing.Color.Gray
-        Me.Label4.Size = New System.Drawing.Size(82, 23)
+        Me.Label4.Size = New System.Drawing.Size(62, 19)
         Me.Label4.StartColor = System.Drawing.Color.Black
         Me.Label4.TabIndex = 15
         Me.Label4.Text = "Label1"
@@ -238,11 +253,10 @@ Partial Class Form1
         Me.Label3.EndColor = System.Drawing.Color.Black
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(0, 48)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(0, 39)
         Me.Label3.Name = "Label3"
         Me.Label3.ShadowColor = System.Drawing.Color.Gray
-        Me.Label3.Size = New System.Drawing.Size(82, 23)
+        Me.Label3.Size = New System.Drawing.Size(62, 19)
         Me.Label3.StartColor = System.Drawing.Color.Black
         Me.Label3.TabIndex = 14
         Me.Label3.Text = "Label1"
@@ -256,11 +270,10 @@ Partial Class Form1
         Me.label2.EndColor = System.Drawing.Color.Black
         Me.label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.label2.ForeColor = System.Drawing.Color.White
-        Me.label2.Location = New System.Drawing.Point(0, 25)
-        Me.label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.label2.Location = New System.Drawing.Point(0, 20)
         Me.label2.Name = "label2"
         Me.label2.ShadowColor = System.Drawing.Color.Gray
-        Me.label2.Size = New System.Drawing.Size(82, 23)
+        Me.label2.Size = New System.Drawing.Size(62, 19)
         Me.label2.StartColor = System.Drawing.Color.Black
         Me.label2.TabIndex = 9
         Me.label2.Text = "Label1"
@@ -275,10 +288,9 @@ Partial Class Form1
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(0, 2)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.ShadowColor = System.Drawing.Color.Gray
-        Me.Label1.Size = New System.Drawing.Size(82, 23)
+        Me.Label1.Size = New System.Drawing.Size(62, 19)
         Me.Label1.StartColor = System.Drawing.Color.Black
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Label1"
@@ -286,30 +298,12 @@ Partial Class Form1
         Me.Label1.XOffset = 1.0!
         Me.Label1.YOffset = 1.0!
         '
-        'label11
-        '
-        Me.label11.Angle = 0!
-        Me.label11.EndColor = System.Drawing.Color.Black
-        Me.label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label11.ForeColor = System.Drawing.Color.White
-        Me.label11.Location = New System.Drawing.Point(0, 209)
-        Me.label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.label11.Name = "label11"
-        Me.label11.ShadowColor = System.Drawing.Color.Gray
-        Me.label11.Size = New System.Drawing.Size(82, 23)
-        Me.label11.StartColor = System.Drawing.Color.Black
-        Me.label11.TabIndex = 21
-        Me.label11.Text = "Label1"
-        Me.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.label11.XOffset = 1.0!
-        Me.label11.YOffset = 1.0!
-        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(155, 240)
+        Me.ClientSize = New System.Drawing.Size(116, 195)
         Me.Controls.Add(Me.label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
@@ -323,7 +317,6 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form1"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
@@ -363,4 +356,5 @@ Partial Class Form1
     Friend WithEvents Label10 As shadow.ShadowLabel
     Friend WithEvents timermenu As Timer
     Friend WithEvents label11 As shadow.ShadowLabel
+    Friend WithEvents timernic As Timer
 End Class

@@ -369,7 +369,6 @@ Partial Public Class Form1
         cls.calcolatutto()
 
 
-        loadnic()
 
 
         timermessaggi.Enabled = True
@@ -832,7 +831,10 @@ yyy:
 
     Private Sub BandwidthPerSec()
         Try
-
+            If net Is Nothing Then
+                timernic.Enabled = True
+                Exit Sub
+            End If
             Dim NicStats As IPv4InterfaceStatistics = net.GetIPv4Statistics
 
 
@@ -1892,6 +1894,11 @@ yyy:
         End If
     End Sub
 
+    Private Sub timernic_Tick(sender As Object, e As EventArgs) Handles timernic.Tick
+        timernic.Enabled = False
+        loadnic()
+    End Sub
+
     Private Sub loadnic()
 
         Try
@@ -1900,9 +1907,9 @@ yyy:
                 If network.OperationalStatus = 1 Then
                     If GetLocalIPAddress() <> "" And (network.NetworkInterfaceType = 6 Or network.NetworkInterfaceType = 71) Then
 
-                        Dim ip = network.GetIPProperties().UnicastAddresses(1).Address.ToString
-                            net = network
-                            Exit Sub
+                        ' Dim ip = network.GetIPProperties().UnicastAddresses(1).Address.ToString
+                        net = network
+                        Exit Sub
 
                     End If
 
@@ -1914,8 +1921,11 @@ yyy:
 
 
         Catch exception As System.Exception
-            Throw
+            net = Nothing
         End Try
+
+ 
+
     End Sub
 End Class
 
