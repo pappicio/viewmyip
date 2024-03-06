@@ -39,4 +39,3 @@ D:\viewmyip\viewmyip\obj\Release\viewmyip.Resources.resources
 D:\viewmyip\viewmyip\obj\Release\viewmyip.vbproj.GenerateResource.cache
 D:\viewmyip\viewmyip\obj\Release\viewmyip.vbproj.CoreCompileInputs.cache
 D:\viewmyip\viewmyip\obj\Release\viewmyip.exe
-D:\viewmyip\viewmyip\obj\Release\viewmyip.vbproj.AssemblyReference.cache

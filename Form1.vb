@@ -827,7 +827,7 @@ yyy:
     Dim LastUpload As Long
     Dim LastDownload As Long
 
-    Public net As NetworkInterface
+    Public net As NetworkInterface = Nothing
 
     Private Sub BandwidthPerSec()
         Try
@@ -1907,12 +1907,10 @@ yyy:
                 If network.OperationalStatus = 1 Then
                     If GetLocalIPAddress() <> "" And (network.NetworkInterfaceType = 6 Or network.NetworkInterfaceType = 71) Then
 
-                        ' Dim ip = network.GetIPProperties().UnicastAddresses(1).Address.ToString
                         net = network
                         Exit Sub
 
                     End If
-
 
                 End If
             Next
